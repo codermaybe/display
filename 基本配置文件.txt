@@ -1,0 +1,23 @@
+前端部分：
+
+目前前端访问后端的路径写死为 http://localhost:8080/bishetry_war_exploded/index.jsp
+src文件夹中包含网页源码
+前端out文件夹中点击my-app.exe 可以直接运行封装好的前端程序
+编译参考electron官网的指令
+
+后端部分
+idea配置
+IDEA中 file - setting -Runn - 设置“-Dfile.encoding=gbk2312”,让maven控制台显示正常
+在File -project structure-modules - web Resource directories中设置/CaChe 资源文件夹，指定到当前后端代码文件夹里所包含的的CaChe文件夹
+在run/debug configurations设置中设置如下：
+tomcat配置：
+Server选项卡中
+1.vm options 中添加    -Dfile.encoding=UTF-8
+2.http port指定端口为默认的8080
+Deployment选项卡中
+war exploded包   指定application context为  /bishetry_war_exploded ，保证正常的访问
+(可选选项)war 包指定为/bishetry_war  ，也可通过相应修改的路径访问
+
+
+
+

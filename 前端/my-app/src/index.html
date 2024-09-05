@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+	<title>Home</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content=""/>
+	
+	
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	<link rel="shortcut icon" href="img/聊天.png" />
+	<!-- //web-fonts -->
+	<link href="bootstrap-3.4.1/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+	<!-- bg effect -->
+	<div id="bg">
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+	</div>
+	<!-- //bg effect -->
+	<!-- title -->
+	<h1 id="notice" style="text-align: center;">下方输入信息</h1>
+	<!-- //title -->
+	
+	
+	<!-- content -->
+	<div class="sub-main-w3">
+		<form action="http://localhost:8080/bishetry_war_exploded/index.jsp" method="post" onsubmit="return checkinfo()">
+			<h2>快速登录
+				<i class="fa fa-level-down" aria-hidden="true"></i>
+			</h2>
+			<div class="form-style-agile">
+				<label>
+					<i class="fa fa-user"></i>
+					姓名
+				</label>
+				<input placeholder="" id="username" name="username" type="text" required="">
+			</div>
+			<div class="form-style-agile">
+				<label>
+					<i class="fa fa-unlock-alt"></i>
+					备注
+				</label>
+				<input   placeholder=""  name="UserBackupInfo" type="text" id="userinfo">
+				
+			</div>
+			<!-- checkbox -->
+			<div class="wthree-text">
+				<ul>
+					<li>
+						<label class="anim">
+<!--隐藏控键，保证表单属性有提交-->	<input type="hidden" name="ismale" value="false">
+							<input type="checkbox" class="checkbox" name="ismale" value="true" onclick="checkSex(this)" >
+						        <span>选择性别</span>
+							
+						</label>
+					</li>
+					<li>
+						<a href="#" id="sex">女</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //checkbox -->
+			<input type="submit" value="Log In" onclick="checkinfo()" >
+		</form>
+	</div>
+	<!-- //content -->
+
+	<!-- copyright -->
+	<div class="footer">
+		<p><a target="_blank" >姓名仅支持中英文和下划线，不支持空格</a></p>
+	</div>
+	<!-- //copyright -->
+
+	<!-- Jquery -->
+	<script src="jquery-3.6.0.js"></script>
+	<!-- //Jquery -->
+
+	<!-- effect js -->
+	<script src="js/canva_moving_effect.js"></script>
+	<!-- //effect js -->
+	<!--表单校验-->
+  <script src="js/index_selfconfig.js"></script>
+</body>
+
+</html>

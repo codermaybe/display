@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>ChatListFontServlet</servlet-name>
+    <servlet-class>Servlet.ChatListFontServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatListFontServlet</servlet-name>
+    <url-pattern>/ChatListFontServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ChatConnectServlet</servlet-name>
+    <servlet-class>Servlet.ChatConnectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChatConnectServlet</servlet-name>
+    <url-pattern>/ChatConnectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RemoteUserServlet</servlet-name>
+    <servlet-class>Servlet.RemoteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoteUserServlet</servlet-name>
+    <url-pattern>/RemoteUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>Servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/UploadServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
+
+
